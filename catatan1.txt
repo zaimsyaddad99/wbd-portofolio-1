@@ -1,0 +1,5 @@
+<meta charset="UTF-8">
+ditujukan kepada mesin pencari sebagai tag. charset itu digunakan untuk menerjemahkan bit bit di dalam halaman html menjadu karakter.
+UTF-8 menyatukan berbagai karakter mulai dari ascii, iso, cina, jepang dan lain lain.
+tanpa menuliskan charset UTF-8 mengakibatkan membuat web browser menebak-nebak kira kira itu karakter apa.
+Pentingnya apa? ketika proses menebak ini bisa jadi masalah, yakni celah keamanan google XSS pada tahun 2005.

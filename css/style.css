@@ -1,0 +1,98 @@
+body {
+    /* background-color: #1c2e4a; */
+}
+
+.navbar {
+    font-family: calibri;
+    font-size: 50px;
+    color: #1c2e4a;
+    float: left;
+    width: 33.3%;
+    border: none;
+    outline: none;
+}
+
+#intro {
+    text-align: center;
+    color: #1c2e4a;
+    font-family: calibri;
+    letter-spacing: 1px;
+    line-height: 0ch;
+    height: 100%;
+    padding: 100px;
+    background-color: #D0DFFF;
+}
+
+.intro-title {
+    padding: 10px;
+    font-size: 100px;
+    color: black;
+}
+
+.intro-desc {
+    color: #1c2e4a;
+    font-family: calibri;
+    padding: 100px;
+    text-align: justify;
+    line-height: normal;
+}
+
+#hobby-section {
+    background-color: #ECFCFF;
+    margin: 0;
+    padding: 5px;
+    height: 800px;
+    line-height: 10px;
+}
+
+.hobby-title {
+    padding: 100px;
+    font-family: calibri;
+    text-align: center;
+    font-size: 100px;
+}
+
+.hobbies {
+    float: left;
+    width: 33.3%;
+}
+
+.hobbies img {
+    width: 100%;
+    height: auto;
+}
+
+.hobbies img:hover {
+    width: 450px;
+}
+
+.hobby-desc {
+    text-align: center;
+    font-family: calibri;
+    font-size: 30px;
+}
+
+#socmed {
+    background-color: white;
+    padding: 5px;
+    height: 800px;
+    line-height: 10px;
+}
+
+.socmed-content {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.socmed-content img:hover {
+    width: 225px;
+    height: 225px;
+}
+
+.socmed-title {
+    text-align: center;
+    font-family: calibri;
+    padding: 100px;
+    font-size: 100px;
+}

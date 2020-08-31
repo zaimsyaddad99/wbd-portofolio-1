@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wildan Zaim Syaddad</title>
+        <link rel="icon" href="images/fav.png"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+
+    <body>
+        <!-- Navbar with button by implementing a simple Javascript function -->
+        <button class="navbar" onclick="openPage('intro',this,'#D0DFFF')" id="defaultPage">About</button>
+        <button class="navbar" onclick="openPage('hobby-section',this,'#ECFCFF')">Hobbies</button>
+        <button class="navbar" onclick="openPage('socmed',this,'#FFFFFF')">Contact</button>
+        
+        <!-- Page 1 -->
+        <section id="intro" class="pages">
+            <h1 class="intro-title">About Me</h1>
+            <img src="images/me3.jfif" alt="my photo">
+            <h1>Wildan Zaim Syaddad</h1>
+            <h5>13518068</h5>
+            <h5>Teknik Informatika</h5>
+            <div class="intro-desc">
+                <p><dd>Assalamualaikum warahmatullahi wabarakatuh. </dd>
+                Hai selamat datang! Perkenalkan nama saya Wildan Zaim Syaddad, seorang mahasiswa ITB angkatan 2018 jurusan Teknik Informatika.
+                Saya terlahir 20 tahun yang lalu sejak terakhir kali halaman sederhana ini dibuat untuk memenuhi tugas kuliah online Pengambangan Aplikasi Berbasis Web.
+                Diampu oleh dosen Pak Yudis, semoga dapat mendapatkan ilmu yang banyak dan bermanfaat untuk kemudian hari. Semoga juga tetap terus semangat meskipun
+                berada di tengah pandemi Covid-19. Saya sadar laman ini sangat banyak akan kekurangan, bahkan masih jauh dari kata sederhana. Sebab laman ini dibuat dengan
+                html css dan javascript sederhana dengan tanpa framework sama sekali serta kurang maksimalnya diri ini dalam eksplorasi. Sekian dan mohon maaf.</p>
+            </div>
+        </section>
+
+
+        <!-- Page 2 -->
+        <section id="hobby-section" class="pages">
+            <h1 class="hobby-title">My Hobbies</h1>
+            <div class="hobbies">
+                <img src="images/game.jpg" alt="Gaming" width="600" height="400">
+            </div>
+            <div class="hobbies">
+                <img src="images/computer.jpg" alt="Gaming" width="600" height="400">
+            </div>
+            <div class="hobbies">
+                <img src="images/futsal.jpg" alt="Gaming" width="600" height="400">
+            </div>
+        </section>
+
+        <!-- Page 3-->
+        <section id="socmed" class="pages">
+            <h1 class="socmed-title">Contact Me!</h1>
+            <div class="socmed-content">
+                <a href="https://twitter.com/Zaim_Ibnu_Syam">
+                    <img src="images/twitter.jpg" alt="https://twitter.com/Zaim_Ibnu_Syam" width="200" height="200">
+                </a>
+            </div>
+            <div class="socmed-content">
+                <a href="https://www.instagram.com/zaim.syaddad/">
+                    <img src="images/instagram.jpg" alt="https://www.instagram.com/zaim.syaddad/" width="200" height="200">
+                </a>
+            </div>
+            <div class="socmed-content">
+                <a href="https://www.linkedin.com/in/wildan-zaim-syaddad-aa3136171/">
+                    <img src="images/linkedin.jpg" alt="https://www.linkedin.com/in/wildan-zaim-syaddad-aa3136171/" width="200" height="200">
+                </a>
+            </div>
+        </section>
+
+        <!-- Implement Simple Javascript -->
+        <!-- Implement Javascript to changing the page (content) and background color -->
+        <script>
+            function openPage(pageName,elmnt,color) {
+            var i, content, link;
+            content = document.getElementsByClassName("pages");
+            for (i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+            link = document.getElementsByClassName("link");
+            for (i = 0; i < link.length; i++) {
+                link[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+            }
+
+            document.getElementById("defaultPage").click();
+        </script>
+    </body>
+</html>
